@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int contohfunction () {
+	int x = 15;
+	return x;
+	//variabel dihapus dari alamat memori 
+}
+int contohfunction2 () {
+	int y = 10;
+	return y;
+	//variabel dihapus dari memori
+}
+
+int main () {
+	int x = 25;
+	cout << " ini adalah variabel lokal dari fungsi utama " << x <<endl;
+	cout << " ini adalah variabel lokal dari fungsi contohfunction " <<contohfunction();
+	cout <<endl;
+	int y = 20;
+	cout << " ini adalah variabel lokal dari fungsi kedua " << y <<endl;
+	cout << " ini adalah variabel lokal dari fungsi contohfunction2 " <<contohfunction2();
+}
