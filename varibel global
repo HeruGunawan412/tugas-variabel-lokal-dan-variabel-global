@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+//ini variabel global
+int x = 5;
+int contohfunction () {
+	x = 10;
+	return x;
+}
+int y = 15;
+int contohfunction2 () {
+	int y = 20;
+	return y;
+}
+int z = 25;
+int contohfunction3 () {
+	int z = 30;
+	return z;
+}
+int main () {
+	cout << " ini adalah variabel global " << x <<endl;
+	cout << " ini adalah variabel global dari fungsi contohfunction " <<contohfunction();
+	cout <<endl;
+	cout << " ini adalah variabel global  " << y <<endl;
+	cout << " ini adalah variabel lokal dari fungsi contohfunction2 " <<contohfunction2();
+	cout <<endl;
+	cout << " ini adalah variabel global  " << z <<endl;
+	cout << " ini adalah variabel lokal dari fungsi contohfunction3 " <<contohfunction3();
+}
